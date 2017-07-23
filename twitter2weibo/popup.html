@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <script type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <a href="">authorize</a>
+    <script>
+      $('a').on('click', function() {
+	$.ajax({
+	  url: 'https://api.weibo.com/oauth2/authorize',
+	  type: 'GET',
+	  data: {
+	    client_id: '1617638443',
+	    response_type: 'code',
+	    display: 'default',
+	    redirect_url: 'http://open.weibo.com/apps/1617638443/privilege/oauth'
+	  },
+	  success: function(data) {
+	    alert(data);
+	  },
+	  error: function(data) {
+	    alert(data);
+	  }
+	});
+      });
+    </script> 
+
+    <a href="https://api.weibo.com/oauth2/authorize?client_id=1617638443&response_type=code&redirect_uri=http://open.weibo.com/apps/1617638443/privilege/oauth&forcelogin=true">authorize2</a>
+  </body>
+</html>

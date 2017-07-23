@@ -1,0 +1,21 @@
+{
+  "name": "TwitterToWeibo",
+  "version": "0.1",
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*", 
+                  "https://api.weibo.com/oauth2/default.html?code=*"],
+      "js": ["jquery-1.9.1.min.js", "content_script.js"]
+    }
+  ],
+  "permissions": [
+    "https://api.weibo.com/2/statuses/update.json",
+    "storage"
+  ],
+  "web_accessible_resources": ["jquery.min.map"],
+  "manifest_version": 2
+}
