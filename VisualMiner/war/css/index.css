@@ -1,0 +1,276 @@
+/* global */
+body {
+	font-family: arial, sans-serif;
+	margin: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* a:link {
+	color: #1155CC;
+}
+
+a:visited {
+	color: #6611CC;
+}
+
+a:active {
+	color: #D14836;
+}
+ */
+a:hover {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+#main {
+	/*height: 1200px; */
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 50px;
+}
+
+#banner {
+	width: 100%;
+	height: 70px;
+	margin-bottom: 20px;
+}
+
+#banner h1 {
+	position: relative;
+	top: 15px;
+}
+
+#site a {
+	color: #DD4839;
+	text-decoration: none;
+}
+
+#container {
+	position: relative;
+	height: 90%;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+}
+
+#footer {
+	display: none;
+	background-color: #4B99c6;
+	position: relative;
+	width: 100%;
+	height: 10%;
+	z-index: 100;
+}
+
+/* app-bar */
+/* .title {
+	color: #DD4839;
+	font-size: 13px;
+	padding: 7px 0 15px;
+}
+
+   #app-bar {
+	width: 100%;
+	height: 5%;
+	border-style: solid;
+	border-width: 5px 0;
+	border-bottom-color: #D4D4D4;
+	margin-top: 10px;
+	margin-bottom: 21px;
+}
+ */
+/* side-bar */
+#side-bar {
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+#unit {
+	display: none;
+}
+
+/* content */
+.hidden {
+	display: none;
+}
+
+.content {
+	/* 	display: none;
+ */
+	float: right;
+	width: 80%;
+	height: 100%;
+	/* 	border-style: solid;
+	border-width: 5px;
+	border-color: #222222; */
+}
+
+.prog-bar {
+	height: 20px;
+	width: 150px;
+	padding-left: 5px;
+}
+
+.count {
+	color: #ffffff;
+}
+
+#content-nav {
+	position: relative;
+	float: right;
+	margin-right: 20px;
+	display: inline;
+}
+
+#content-nav button {
+	margin: 15px;
+}
+
+
+
+
+
+#overview {
+/*	position: relative; */
+	height: 150px;
+	border-bottom: 1px solid #555555;
+/*	z-index: -10; */
+}
+
+#overview h2 {
+	padding-left: 10px;
+}
+
+
+#weibo {
+	height: 80%;
+}
+
+#weibo ul {
+	list-style-type: none;
+	list-style-position: outside;
+}
+
+#weibo li, #wiki {
+	margin: 10px 15px 10px 15px;
+	padding: 0.4em;
+	font-size: 10pt;
+	height: 60px;
+	background-color: #555555;
+	border-radius: 3px;
+}
+
+#location_map, #time {
+	position: relative;
+	left: 40px;
+	top: 25px;
+	width: 90%;
+}
+
+#location_slide {
+	position: relative;
+	left: 40px;
+	top: 50px;
+}
+
+#location_slide input {
+	width: 500px;
+}
+
+#slide_range {
+	position: relative;
+	float: left;
+	width: 450px;
+}
+
+#slide_value {
+	position: relative;
+	float: right;
+	right: 150px
+}
+
+#location_list {
+	position: relative;
+	background-color: #555555;
+	width: 85%;
+	height: 30%;
+	margin: 70px 35px;
+	border-radius: 3px;
+}
+
+#emotion_wordcloud {
+	background-color: #555555;
+	position: relative;
+	float: right;
+	width: 300;
+	height: 350;
+	top: 50;
+	right: 0px;  /* stick to right */
+	border-radius: 3px;
+}
+
+#emotion_category {
+	background-color: #555555;
+	position: relative;
+	float: left;
+	top: 50;
+	width: 350;
+	height: 350;
+	border-radius: 3px;
+}
+
+.cont-li {
+	width: 90%;
+	height: 95%;
+}
+
+.topic {
+	position: relative;
+	float: left;
+}
+
+table {
+	position: relative;
+	float: right;
+}
+
+.cont-li a {
+	color: #ffffff;
+}
+
+.intro {
+	height: 20px;
+}
+
+.dimension {
+	width: 100%;
+}
+
+/* plugins */
+.selectable {
+	list-style-type: none;
+	margin: 20px;
+	padding: 0;
+	/*	width: 100%; */
+}
+
+.selectable li  {
+	margin: 10px 15px 10px 15px;
+	padding: 0.4em;
+	font-size: 1.4em;
+	height: 30px;
+	background-color: #555555;
+	border-radius: 3px;
+}
+
+
+.selectable:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,131 @@
+
+.sidr {
+    background: none repeat scroll 0 0 #333333;
+    box-shadow: 0 0 5px 5px #222222 inset;
+    color: #FFFFFF;
+    display: block;
+    font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 15px;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    width: 260px;
+    z-index: 999999;
+}
+.sidr .sidr-inner {
+    padding: 0 0 15px;
+}
+.sidr .sidr-inner > p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sidr.right {
+    left: auto;
+    right: -260px;
+}
+.sidr.left {
+    left: 0;
+    right: auto;
+}
+.sidr h1, .sidr h2, .sidr h3, .sidr h4, .sidr h5, .sidr h6 {
+    background-image: linear-gradient(#4D4D4D, #1A1A1A);
+    box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.2);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 0 5px;
+    padding: 0 15px;
+}
+.sidr p {
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+.sidr p a {
+    color: rgba(255, 255, 255, 0.9);
+}
+.sidr > p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.sidr ul {
+    border-bottom: 1px solid #4D4D4D;
+    border-top: 1px solid #1A1A1A;
+    display: block;
+    margin: 0 0 15px;
+    padding: 0;
+}
+.sidr ul li {
+    border-bottom: 1px solid #1A1A1A;
+    border-top: 1px solid #4D4D4D;
+    display: block;
+    line-height: 48px;
+    margin: 0;
+}
+.sidr ul li:hover, .sidr ul li.active, .sidr ul li.sidr-class-active {
+    border-top: medium none;
+    line-height: 49px;
+}
+.sidr ul li:hover > a, .sidr ul li:hover > span, .sidr ul li.active > a, .sidr ul li.active > span, .sidr ul li.sidr-class-active > a, .sidr ul li.sidr-class-active > span {
+    box-shadow: 0 0 15px 3px #222222 inset;
+}
+.sidr ul li a, .sidr ul li span {
+    color: #FFFFFF;
+    display: block;
+    padding: 0 15px;
+    text-decoration: none;
+}
+.sidr ul li ul {
+    border-bottom: medium none;
+    margin: 0;
+}
+.sidr ul li ul li {
+    font-size: 13px;
+    line-height: 40px;
+}
+.sidr ul li ul li:last-child {
+    border-bottom: medium none;
+}
+.sidr ul li ul li:hover, .sidr ul li ul li.active, .sidr ul li ul li.sidr-class-active {
+    border-top: medium none;
+    line-height: 41px;
+}
+.sidr ul li ul li:hover > a, .sidr ul li ul li:hover > span, .sidr ul li ul li.active > a, .sidr ul li ul li.active > span, .sidr ul li ul li.sidr-class-active > a, .sidr ul li ul li.sidr-class-active > span {
+    box-shadow: 0 0 15px 3px #222222 inset;
+}
+.sidr ul li ul li a, .sidr ul li ul li span {
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 30px;
+}
+.sidr form {
+    margin: 0 15px;
+}
+.sidr label {
+    font-size: 13px;
+}
+.sidr input[type="text"], .sidr input[type="password"], .sidr input[type="date"], .sidr input[type="datetime"], .sidr input[type="email"], .sidr input[type="number"], .sidr input[type="search"], .sidr input[type="tel"], .sidr input[type="time"], .sidr input[type="url"], .sidr textarea, .sidr select {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.1);
+    border: medium none;
+    border-radius: 2px 2px 2px 2px;
+    clear: both;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-size: 13px;
+    margin: 0 0 10px;
+    padding: 5px;
+    width: 100%;
+}
+.sidr input[type="checkbox"] {
+    clear: none;
+    display: inline;
+    width: auto;
+}
+.sidr input[type="button"], .sidr input[type="submit"] {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #333333;
+}
+.sidr input[type="button"]:hover, .sidr input[type="submit"]:hover {
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.9);
+}

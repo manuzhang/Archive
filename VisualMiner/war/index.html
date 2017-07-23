@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>VisualMiner</title>
+
+<link type="text/css" href="css/jquery-ui-1.10.2.custom.css"
+	rel="Stylesheet" />
+<link type="text/css" href="css/jquery.sidr.dark.custom.css"
+	rel="Stylesheet" />
+<link type="text/css" href="css/index.css" rel="Stylesheet" />
+
+
+<!-- <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.2.custom.min.js"></script> -->
+<script type="text/javascript"
+	src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript"
+	src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.sidr.min.js"></script>
+<script type="text/javascript" src="js/d3.v3.js"></script>
+<script type="text/javascript" src="js/d3.layout.cloud.js"></script>
+<script type="text/javascript" src="js/word_cloud.js"></script>
+<!--  <script type="text/javascript" src="js/jsapi.js"></script> -->
+<script type="text/javascript"
+	src='//www.google.com/jsapi?autoload={"modules":[{"name":"visualization","version":"1","packages":["corechart","table"]},
+                                                 {"name":"visualization","version":"1","packages":["geochart","table"]}]}'></script>
+<script type="text/javascript" src="js/gchart.js"></script>
+<script type="text/javascript" src="js/topic.js"></script>
+<script type="text/javascript" src="js/ui.js"></script>
+
+
+
+</head>
+
+<body>
+	<div id="main">
+		<div id="banner">
+			<h1 id="site">
+				<a href="/index.html">VisualMiner</a>
+			</h1>
+		</div>
+		<div id="container">
+			<div id="side-bar">
+				<div id="sidr">
+					<ul>
+						<li id="title" class="active"><a href="#">热门话题</a></li>
+						<ul id="cate">
+							<li><a href="#">分类一</a></li>
+							<li><a href="#">分类二</a></li>
+							<li><a href="#">分类三</a></li>
+						</ul>
+						<ul id="unit" class="hidden">
+							<li id="li-page" class="active"><a href="#">事件概况</a></li>
+							<li id="li-emotion" class=""><a href="#">情绪特征</a></li>
+							<li id="li-location" class=""><a href="#">地域特征</a></li>
+							<li id="li-time" class=""><a href="#">变化趋势</a></li>
+						</ul>
+
+						<!-- 	<li><a href="#">Others</a></li> -->
+						<li><form id="search">
+								<input type="search" placeholder="搜索话题">
+							</form></li>
+					</ul>
+					<!-- 					<form>
+						<input type="text" placeholder="Search...">
+					</form> -->
+				</div>
+			</div>
+			<div class="content hidden">
+				<div id="list">
+					<ul class="selectable">
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+						<li>
+							<div class="cont-li">
+								<div class="topic">
+									<a href="#">topic</a>
+								</div>
+								<table>
+									<tbody>
+										<tr>
+											<td class="count"></td>
+											<td class="prog-bar"></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</li>
+
+					</ul>
+
+					<div id="content-nav">
+						<button id="prev-page">上一页</button>
+						<button id="next-page">下一页</button>
+					</div>
+				</div>
+				<div id="overview" class="hidden">
+					<h2></h2>
+					<div id="wiki">话题介绍</div>
+				</div>
+				<div id="page" class="dimension hidden">
+					<div id="weibo">
+						<ul>
+						</ul>
+					</div>
+				</div>
+				<div id="emotion" class="dimension hidden">
+					<div id="emotion_wordcloud"></div>
+					<div id="emotion_category"></div>
+					<!-- 					<div id="emotion_atplace"></div>
+ -->
+				</div>
+				<div id="location" class="dimension hidden">
+					<div id="location_map"></div>
+					<div id="location_slide">
+						<div id="slide_range"></div>
+						<div id="slide_value"></div>
+					</div>
+					<!-- 				<form id="location_slide">
+						<input type="range" min="1" max="10" />
+					</form>
+					
+					
+ -->
+					<!-- 					<div id="location_list">
+						<ul>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+							<li class="hidden">
+								<div class="loc_name"></div>
+								<div class="loc_count"></div>
+							</li>
+						</ul>
+					</div> -->
+				</div>
+				<div id="time" class="dimension hidden"></div>
+			</div>
+
+
+		</div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
