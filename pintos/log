@@ -1,0 +1,49 @@
+2012-04-06
+
+the bochs simulator seems to be problematic
+use qemu instead
+qemu is installed locally so that the project won't be self-contained
+
+2012-04-08
+
+the old version of bochs(2.2.6) can't be compiled with g++
+the newer version gives the following error:
+
+Writing command line to /tmp/VaVP0BRIm_.dsk...
+squish-pty bochs -q
+========================================================================
+                     Bochs x86 Emulator 2.5.1.svn
+             Built from SVN snapshot, after release 2.5.1
+00000000000i[     ] installing x module as the Bochs GUI
+                  Compiled on Apr  6 2012 at 19:37:19
+========================================================================
+Next at t=0
+(0) [0x00000000fffffff0] f000:fff0 (unk. ctxt): (invalid)                 ; ffff
+<bochs:1> fgets() returned ERROR.
+debugger interrupt request was 0
+(0).[0] [0x00000000fffffff0] f000:fff0 (unk. ctxt): (invalid)                 ; ffff
+
+
+2012-04-14
+successfully compile QEMU from source and install it into the ./bin directory
+now the project is self-contained with renaming qemu-system-i386 to qemu
+
+
+2012-04-14
+invoking thread_block and thread_unblock will fail the alarm-simultaneous; but this will not happen when invoking sema_up and sema_down 
+
+2012-04-14
+the problem is not about which functions are invoked but how "le" finds its next elem (thread.c:129); when an elem's time expires and is removed from list its next elem can no longer be accessed. In that case, the next elem is the return value of list_remove
+
+2012-04-16
+implement max heap on a doubly linked list is a lot of pain considering the number of pointers to take care of; the benefit is to dynamically insert and remove when the amount of data is not known beforehand
+
+2012-04-22
+priority queue is not fit for round-robin scheduling
+
+2012-04-23
+some test fails in some occassion while passes in others
+mlfqs-recent-1 still fails 
+
+2012-04-23
+all the problem boils down to that I forgot to delete a thread fron all_list when it exits
