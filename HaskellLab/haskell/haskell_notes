@@ -1,0 +1,93 @@
+Just remember Everything is a lambda function with only one argument!
+
+CHAPTER 1. Getting Started
+
+ghc
+  an optimizing compiler that generates fast native code
+ghci
+  an interactive interpreter and debugger
+runghc 
+  a program for running Haskell programs as scripts, without needing to compile them first
+  
+http://tiswww.case.edu/php/chet/readline/rltop.html#Documentation 
+
+Prelude>:set prompt "ghci> "
+ghci>:set +t
+ghci>:unset +t
+ghci>:module + Data.Ratio
+ghci>:info (+)
+ghci>:type (+)
+
+ghci>let e = exp 1
+
+Lists
+  enumeration notation
+ghci>[1..10]          -- closed interval
+ghci>[1,4..15]
+  concatenate two lists using the (++) operator
+  (:) adds an element to the front of a list
+  
+construct a ratio number
+ghci>:m +Data.Ratio
+ghci>11 % 29       -- both numerator and denominator as Integer
+
+CHAPTER2. Types and Functions
+strong, static and automatically inferred
+     Integer is for a signed integer with unbounded length
+
+A type name must start with an Uppercase letter while
+a type variable must start with a Lowercase letter
+
+once a variable is bound to an expression its value will not change so the following will fail
+-- assign.hs
+x = 1
+x = 2
+-- ghci complains
+assign.hs:4:0:
+    Multiple declarations of `Main.x'
+    Declared at: assign.hs:3:0
+                 assign.hs:4:0
+Failed, modules loaded: none.
+
+
+branches (then and else) always have the same type and else branch can never be omitted
+
+operators (||, &&, etc) are ordinary functions
+
+lazy evaluation (thunk - deferred expression)
+-- (||)
+newOr a b = if a then a else b
+ghci>newOr True || (length [1..] > 1)
+-- thx to lazy evaluation the right hand of (||) won't be evaluated and the expression won't hang ghci
+
+(parametric) polymorphism
+ghci>:type last
+last :: [a] -> a
+
+defining a new data type
+-- BookStore.hs
+data BookInfo = Book Int String [String]
+                | Nothing
+                deriving (Show)
+myInfo :: BookInfo
+myInfo = Book 123456 "Algebra of Programming" ["Richard Bird", "Oege de Moor"]
+-- BookInfo is a type constructor, Book a value/data constructor
+-- the former is used in type declaration or type signature while the latter in expression, so there is no ambiguity and the two can have the same name
+
+record syntax
+data BookInfo = Book {
+      isbn    :: Int
+    , title   :: String
+    , authors :: [String]
+    } deriving (Show)
+myInfo = Book {
+      123456,
+      "Algebra of Programming"
+      ["Richar Bird", "Oege de Moor"]
+      } deriving (Show)
+type synonyms
+-- BookStore.hs
+type CumstomerID = Int
+
+Infix funtions
+a `plus` b = a + b
