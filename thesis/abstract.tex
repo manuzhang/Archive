@@ -1,0 +1,40 @@
+\titleformat{\chapter}{\centering\hei\xiaosanhao}{\chaptername}{0pt}{}
+\renewcommand\abstractname{摘\qquad 要}
+\begin{abstract}
+\pagenumbering{Roman}
+\setcounter{page}{1}
+\thispagestyle{fancy}
+
+\addcontentsline{toc}{chapter}{摘\qquad要}
+\song\wuhaospace
+\vspace{\baselineskip}
+网民获取信息的渠道正在慢慢向微博转移。一个社会热门话题会在新浪微博上引起广泛讨论。新浪微博支持用户实时搜索和参与话题，但是不能很好地展示话题发展变化的过程。另一方面， Google Trends 通过挖掘和可视化用户搜索的数据，可以直观地呈现一个搜索关键词随时间的变化趋势和在地域上的分布特征。
+
+本文介绍了 VisualMiner，一个新浪微博热点话题的可视化查询系统。我们在海量的微博数据中挖掘一些特征数据，如时间，地点，关键词等，统计话题的讨论数随时间的变化，在不同地域的差异，再借助可视化的方法直观地呈现话题的时间走势和地理分布。除此之外，通过分析微博中出现的情绪词，我们可以挖掘出用户对待某一话题的普遍态度。
+
+我们通过 Sina Weibo API 爬取新浪微博数据，并导入到 HDFS 上，利用 MapReduce 计算框架对原始数据进行分组聚合，再将结果批量上传到 Google App Engine 的数据存储区，最后我们在 Google App Engine 部署 Java Web 应用，借助 Google Chart Tools, Data-Driven Documents 等 JavaScript 库将数据可视化，用户可以在浏览器端查询可视化的数据信息。
+
+在本文中，我们证明我们的应用通过挖掘海量的微博数据，可视化地展示话题的特征，能够为用户全面而直观地关注热点话题提供新的渠道。													
+\\[2\baselineskip]
+关键词：新浪微博，数据挖掘，数据可视化
+\end{abstract}
+
+\titleformat{\chapter}{\centering\xiaosanhao}{\chaptername}{0pt}{}
+\renewcommand\abstractname{Abstract}
+\begin{abstract}
+\pagenumbering{Roman}
+\setcounter{page}{2}
+\thispagestyle{fancy}
+\addcontentsline{toc}{chapter}{ABSTRACT}
+\wuhaospace
+\vspace{\baselineskip}
+\hspace*{\parindent} The major media of netizens to get news have been shifting to microblog services. A heated social topic will raise wide discussion on Sina Weibo, China's most popular microblog service. Sina Weibo allows for users to search for a topic and participate in its discussion in realtime. Nonetheless, it lacks the function to provide users with a full view of a topic. On the other hand, Google Trends has been mining and visualizing user's search data, from which a complete picture of a topic over time and across regions could be drawn. 
+
+This paper concerns the design and implementation of VisualMiner, which visualizes trends of heated topics on Sina Weibo. By extracting such featuring data as time, location and keywords contained in a piece of weibo, we are able to generate statistics and patterns of a social topic with regard to time and region. With the help of visualization tools, we could present the results to users in a direct and vivid way. Furthermore, we also look into users' emotions towards a topic. 
+
+We crawl down data against Sina Weibo API and store them on HDFS, where we group-by and aggregate raw data with MapReduce framework. The processed data are then bulkloaded into Google App Engine's storage layer. Finally, we deploy a Java Web App on top of Google App Engine through which users could view the visualized data. We utilize JavaScript library like Google Chart Tools and Data-Drive Documents to visualize data. 
+ 
+In this paper, we prove that we could bring trends feature to Sina Weibo and present users with a complete picture of a social topic by mining massive data.
+\\[2\baselineskip]
+Keywords: Sina Weibo, Data Mining, Data Visualization
+\end{abstract}

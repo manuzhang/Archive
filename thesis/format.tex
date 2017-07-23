@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%% Font %%%%%%%%%%%%%%%%%%%%%%%%%%
+\setmainfont{Times New Roman}
+\setCJKmainfont{SimSun}
+
+\setCJKfamilyfont{hei}{SimHei}
+\newcommand{\hei}{\CJKfamily{hei}}            % 黑体
+\setCJKfamilyfont{song}{SimSun}
+\newcommand{\song}{\CJKfamily{song}}          % 宋体
+\setCJKfamilyfont{kai}{KaiTi}
+\newcommand{\kai}{\CJKfamily{kai}}
+\newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}                   % 二号，单倍行距
+\newcommand{\erhaospace}{\fontsize{22pt}{1.5\baselineskip}\selectfont}                % 二号，1.5倍行距
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}               % 小二，单倍行距
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}              % 三号，单倍行距
+\newcommand{\sanhaospace}{\fontsize{15.75pt}{1.5\baselineskip}\selectfont}           % 三号，1.5倍行距
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}              % 小三，单倍行距
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}                   % 四号，单倍行距
+ \newcommand{\sihaospace}{\fontsize{14pt}{1.5\baselineskip}\selectfont}          % 四号，1.5倍行距 
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}               % 小四，单倍行距
+\newcommand{\xiaosihaospace}{\fontsize{12pt}{1.5\baselineskip}\selectfont}       % 小四，1.5倍行距
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}                 % 五号，单倍行距
+\newcommand{\wuhaospace}{\fontsize{10.5pt}{1.5\baselineskip}\selectfont}         % 五号，1.5倍行距
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}                % 小五，单倍行距
+
+%%%%%%%%%%%%%%%%% Header && Foot %%%%%%%%%%%%%%%%%%%%%%%
+\fancyhf{}
+\fancyhead[L]{\xiaowuhao\song 华东师范大学学士学位论文}
+\fancyhead[R]{\xiaowuhao\song 新浪微博热点话题可视化查询系统}
+\fancyfoot[R]{\xiaowuhao \thepage}
+\pagestyle{fancyplain}
+
+%%%%%%%%%%%%%%%%% Contents %%%%%%%%%%%%%%%%%%%%
+\renewcommand{\contentsname}{\bfseries 目\qquad 录}
+\setcounter{tocdepth}{1}
+\titlecontents{chapter}[0pt]{\vspace{6pt}\xiaosihao\song\bfseries}
+             {\CJKnumber{\thecontentslabel}、}{}
+             {\bfseries\titlerule*[6pt]{$\cdot$}\xiaosihao\contentspage}
+             [\vspace{6pt}]
+\titlecontents{section}[0.42cm]{\xiaosihao\song}
+             {\thecontentslabel}{}
+             {\titlerule*[6pt]{$\cdot$}\xiaosihao\contentspage}
+             []
+
+			
+\renewcommand{\chaptername}{\CJKnumber{\thechapter}、}                           % 一、第一章
+\titleformat{\chapter}{\xiaosihao\hei}{\chaptername}{0pt}{}
+\titlespacing*{\chapter}{0pt}{-20pt}{0pt}[0pt]
+
+\renewcommand{\thesection}{（\CJKnumber{\arabic{section}}）}                     %(一） 第一节          
+\titleformat{\section}{\xiaosihao\hei}{\thesection}{0pt}{}
+\titlespacing*{\section}{0pt}{0pt}{0pt}[0pt]
+
+\renewcommand{\thesubsection}{\arabic{subsection}.\space}
+\titleformat{\subsection}{\xiaosihao\hei}{\thesubsection}{0pt}{}
+\titlespacing*{\subsection}{0.74cm}{0pt}{0pt}[0pt]
+
+\renewcommand{\thefootnote}{{[}\arabic{footnote}{]}}
+
+%%%%%%%%%%%%%%%% Tables %%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\head}[1]{\textnormal{\textbf{#1}}}
+\renewcommand{\arraystretch}{1.2}
+
+%%%%%%%%%%%%%%%% Citation %%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\bibname}{参考文献}
+\renewcommand{\bibsection}{
+              \titleformat{\chapter}{\centering\xiaosanhao\hei}{\chaptername}{0pt}{}
+              \chapter*{\bibname}
+              \thispagestyle{fancy}
+              }

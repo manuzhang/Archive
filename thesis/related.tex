@@ -1,0 +1,39 @@
+\chapter{相关工作}
+\thispagestyle{fancy}
+本章主要介绍系统中使用到的相关技术框架：Google App Engine，Hadoop 和 jQuery。
+
+\section{Google App Engine}
+Google App Engine\cite{gae}(GAE) 是一个开发、托管网络应用程序的平台，使用Google管理的数据中心。在使用 Google App Engine 时，开发者只需上传应用程序，不需要维护任何服务器。
+Google App Engine 包含以下功能：
+\begin{itemize}
+\item 提供动态网络服务，完全支持常用的网络技术；
+\item 提供 Datastore 持久存储，并支持查询、排序和事务；
+\item 提供自动扩展和负载平衡；
+\item 提供功能完善的本地开发环境，用于在开发者的计算机上模拟 GAE；
+\item 应用程序可以在 Java 环境和 Python 环境中运行，每种环境提供了标准协议和常用技术以进行网络应用程序开发。
+\end{itemize}
+Google App Engine 中数据存储的单位是对象（或实体），实体属于一个种类，具有一组属性。查询可以检索给定种类的实体，按属性值过滤和排序。Google App Engine 提供了两个不同的存储选项，两者的区别在于它们的可用性和一致性保证：
+\begin{itemize}
+\item 主/从数据存储区。使用主-从复制系统，该系统在将数据写入物理数据中心时异步复制数据，为所有读取和查询都提供了强一致性，其代价是在数据中心出现问题时或进行计划内停机期间，会出现暂时的不可用性。
+\item High Replication 数据存储区。使用基于 Paxos 算法的系统在各个数据中心之间复制数据。High Replication 针对读取和写入提供了非常高的可用性，其代价是写入时的延迟时间较长。大多数查询是最终一致的。
+\end{itemize}
+
+\section{Hadoop}
+Hadoop\cite{hadoop12} 是一个支持分布式数据密集型计算的软件框架。它主要由分布式存储系统 HDFS 和 分布式计算框架 MapReduce 构成。
+
+\subsection{HDFS}
+HDFS\cite{hdfs10} 是一个分布式文件系统，通常由一个存储元数据的 namenode 和多个存储实际数据的 datanode 组成。HDFS 将文件分成固定大小的数据块（默认为 64MB），存储在多台机器上。HDFS 通过给数据块存多个备份（默认为 3，2 个在同一机架上，1 个在不同机架上）实现数据的持久性。HDFS 适合于对大文件的批处理操作，而不适用于低延时的用户交互式应用。
+
+\subsection{MapReduce}
+MapReduce\cite{mr04} 是 Google 提出的计算框架，用于大规模数据集的并行计算。MapReduce 作业分为 Map 和 Reduce 两个步骤，开发者只需编写 Map 和 Reduce 函数，专注于算法逻辑，系统会负责资源的管理，任务的分配，提供容错，处理失败。 Map 和 Reduce 在键值对结构的数据上操作。Map 函数并行处理输入一个数据域中的键值对，输出另一个数据域的键值对列表。
+\begin{equation}
+(k_1, v_1) \rightarrow list(k_2, v_2)
+\end{equation}
+系统根据键对列表进行分组（每个键一个组），并将它们分发到不同的机器。Reduce 函数并行处理每组数据，输出一个数据集合。
+\begin{equation}
+(k_2, list(v_2)) \rightarrow list(v_3)
+\end{equation}
+
+\section{jQuery}
+jQuery\cite{jquery} 是一个用于简化客户端对 HTML 进行脚本操作的 JavaScript\cite{jsgood}库。借助 jQuery，开发者可以方便地操纵 HTML 文档，选择 DOM 元素，处理事件，开发 Ajax\cite{ajax}应用。而基于 jQuery 的 jQuery UI\cite{jquery-ui}使得 Web 界面的制作更加高效。jQuery 还提供插件，开发者可以将底层的交互，动画等动作抽象成模块化的控件，从而构建出强大的动态网页和网络应用。此外，jQuery 还提供了多浏览器的支持。
+
