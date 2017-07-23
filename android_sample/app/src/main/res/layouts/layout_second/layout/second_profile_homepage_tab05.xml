@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/tab5"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/bg_editprofile"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="编辑个人资料"
+            android:textSize="30sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/secondProfileHomePageUserAvatar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/second_profile_user_avatar"
+        android:src="@drawable/user_portrait"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+
+
+<!--
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dp"
+      android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:textSize="18sp"
+        android:id="@+id/secondProfileHomePageUserName"/>
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/icon_female"
+        android:id="@+id/secondProfileHomePageUserSex"/>
+  </LinearLayout>
+-->
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="昵称："
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/secondProfileHomePageUserNameEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:cursorVisible="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"/>
+
+
+<!--    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="学校："
+            android:textSize="18sp"
+            />
+        <EditText
+            android:id="@+id/secondProfileHomePageUserSchoolEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:hint="testschol"
+            android:background="@null"
+            android:cursorVisible="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"/> -->
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="手机："
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/secondProfileHomePageUserPhoneEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:cursorVisible="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:background="#FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"/>
+
+
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="2dp">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="邮箱："
+            android:textSize="18sp"
+            />
+        <TextView
+            android:id="@+id/secondProfileHomePageUserEmailEdit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:cursorVisible="false"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:background="#FFFFFF"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"/>
+
+</LinearLayout>

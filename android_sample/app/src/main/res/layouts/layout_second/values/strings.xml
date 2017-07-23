@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_profile">ProfileActivity</string>
+  <string name="title_activity_edit_profile">EditProfileActivity</string>
+  <string name="title_activity_edit_settings">EditSettingsActivity</string>
+  <string name="second_profile_user_avatar">用户头像</string>
+  <string name="second_title">个人资料</string>
+  <string name="second_edit_profile_button">编辑个人资料</string>
+  <string name="second_edit_settings_button">设置</string>
+  <string name="user_nick_name">昵称</string>
+  <string name="user_school">学校</string>
+  <string name="user_mobile">手机</string>
+  <string name="user_email">邮箱</string>
+</resources>

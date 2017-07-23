@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <color name="yilidi_orange">#FFFC8163</color>
+  <color name="welcome_orange">#FF6402</color>
+  <color name="title_bg">#3498DB</color>
+  <color name="item_function_list_divider">#E4E4E4</color>
+</resources>

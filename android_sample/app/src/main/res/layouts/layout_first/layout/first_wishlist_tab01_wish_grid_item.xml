@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center">
+
+  <LinearLayout
+      android:id="@+id/wishContentContainer"
+      android:orientation="vertical"
+      android:background="@drawable/corners_top_bg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFAEB9"
+        android:text="@string/wish_prefix"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#848484"
+        android:textAlignment="center"
+        android:layout_margin="10dp"
+        android:id="@+id/wishGridItemWishContent"/>
+  </LinearLayout>
+  <LinearLayout
+      android:orientation="horizontal"
+      android:background="@drawable/corners_bottom_bg"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/avatarContainer"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/wishGridItemWisherAvatar"
+          android:layout_width="25dp"
+          android:layout_height="25dp"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="3dp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="testtest"
+          android:textSize="15sp"
+          android:textColor="#7A8B8B"
+          android:id="@+id/wishGridItemWisherName"
+          android:layout_centerVertical="true"
+          android:layout_toRightOf="@+id/wishGridItemWisherAvatar"
+          android:layout_marginRight="3dp"/>
+
+     <ImageView
+         android:layout_width="16dp"
+         android:layout_height="16dp"
+         android:src="@drawable/icon_joined"
+         android:layout_centerVertical="true"
+         android:layout_toStartOf="@+id/wishGridItemJoinedCount"
+         android:layout_marginRight="3dp"/>
+
+    <TextView
+        android:id="@+id/wishGridItemJoinedCount"
+        android:text="1100000"
+        android:textSize="18sp"
+        android:textColor="@color/yilidi_orange"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/wishListItemWisherAvatar"
+        android:layout_width="@dimen/avatarSize"
+        android:layout_height="@dimen/avatarSize"
+        android:contentDescription="@string/first_wisher_avatar_description"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/user_portrait"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+  <TextView
+      android:layout_toEndOf="@+id/wishListItemWisherAvatar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="3dp"
+      android:text="woyouyitouxiaomaolvtaconglaiyebuqi我有一头小毛驴从来也不骑有一天我心血来潮骑他去赶集我左右我有一来也不骑有一天我心血来潮其他去赶集。。。"
+      android:id="@+id/wishListItemWishContent" />
+
+  <TextView
+      android:id="@+id/wishListItemDate"
+      android:text="2015-03-19"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/wishListItemWisherAvatar"
+      android:layout_alignParentEnd="true" />
+</RelativeLayout>

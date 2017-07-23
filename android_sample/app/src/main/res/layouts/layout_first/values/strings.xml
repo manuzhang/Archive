@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_user_wish_list">UserWishListActivity</string>
+  <string name="title_activity_user_wish">UserWishActivity</string>
+  <string name="first_title">一哩地心愿卡</string>
+  <string name="first_wisher_avatar_description">用户头像</string>
+  <string name="first_wisher_joined_description">参与用户</string>
+  <string name="wish_prefix">我的心愿是：</string>
+  <string name="wish_detail_title">她的心愿</string>
+  <string name="wish_follower_text">参与此心愿人数：</string>
+  <string name="wish_list_title">TA的其他心愿</string>
+  <string name="accept_wish_title">给TA留言，告诉TA你的心意</string>
+  <string name="accept_wish_cancel">取消</string>
+  <string name="accept_wish_confirm">确定</string>
+  <string name="accept_wish">帮TA实现</string>
+  <string name="other_wishes">TA的其他心愿</string>
+</resources>

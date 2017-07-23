@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+
+  <TextView
+      android:id="@+id/acceptWishTitle"
+      android:text="@string/accept_wish_title"
+      android:gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:labelFor="@+id/acceptWishInput"
+      android:textSize="18sp"
+      android:layout_marginTop="10dp"
+      android:layout_marginBottom="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:textColor="#848484"/>
+
+  <EditText
+      android:id="@+id/acceptWishInput"
+      android:inputType="text"
+      android:layout_width="fill_parent"
+      android:layout_height="100dp"
+      android:gravity="top"
+      android:background="@drawable/edittext_corners_bg"
+      android:layout_marginBottom="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"/>
+
+  <Button
+      android:id="@+id/acceptWishConfirm"
+      android:background="@color/yilidi_orange"
+      android:text="@string/accept_wish_confirm"
+      android:textColor="#FFFFFFFF"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:padding="5dp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      android:layout_marginBottom="5dp"/>
+
+</LinearLayout>

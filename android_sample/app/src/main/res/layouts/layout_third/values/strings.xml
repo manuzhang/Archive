@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="title_activity_create_wish">CreateWishActivity</string>
+  <string name="createWishTitle">在这里，写下您的愿望吧:</string>
+  <string name="createWishConfirm">下一步</string>
+</resources>

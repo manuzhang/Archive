@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bg_editprofile">
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:id="@+id/wishDetailContainer"
+      android:layout_height="wrap_content"
+      android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+      <ImageView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:layout_gravity="center_vertical"
+          android:id="@+id/firstWishDetailPreviousIcon"
+          android:src="@drawable/ic_action_previous_item"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/icon_wish_white"
+                android:layout_marginRight="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/wish_detail_title"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"/>
+            </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:background="#FFFFFF"/>
+
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/firstWishDetailWisherAvatar"
+          android:layout_width="96dp"
+          android:layout_height="96dp"
+          app:border_width="2dp"
+          app:border_color="#FF000000"
+          android:src="@drawable/user_portrait"
+          android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/firstWishDetailWisherName"
+        android:text="testName"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"/>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingRight="10dp"
+          android:paddingLeft="10dp"
+          android:layout_marginBottom="10dp">
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="我的愿望是："
+              android:textColor="#FFF"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/firstWishDetailWishContent"
+              android:text="我想有一座大房子，有很大的落地窗户，阳光洒在地板上，也温暖了我的房子..."
+              android:layout_gravity="center_horizontal"/>
+          </LinearLayout>
+  </LinearLayout>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:background="#FFFFFFFF"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5dp">
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/wish_follower_text"
+          android:textColor="@color/yilidi_orange"
+          android:layout_gravity="center_vertical"
+          android:labelFor="@+id/firstWishDetailFollowerNum" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textAppearance="?android:attr/textAppearanceMedium"
+          android:textColor="@color/yilidi_orange"
+          android:id="@+id/firstWishDetailFollowerNum"
+          android:textSize="25sp"
+          android:text="500000"
+          android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+      <View
+          android:layout_width="fill_parent"
+          android:layout_height="1px"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="#000"/>
+
+      <GridView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"></GridView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accept_wish"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/yilidi_orange"
+        android:id="@+id/firstWishDetailAcceptWish"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/other_wishes"
+        android:textColor="@color/yilidi_orange"
+        android:background="@drawable/border"
+        android:id="@+id/firstWishDetailOtherWishes"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+  </LinearLayout>
+
+</LinearLayout>

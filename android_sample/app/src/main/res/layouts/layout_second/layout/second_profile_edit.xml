@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@drawable/bg_editprofile"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+  <ImageView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/secondProfileHomePageUserAvatar"
+      android:contentDescription="@string/second_profile_user_avatar"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="20dp"
+      android:src="@drawable/ic_launcher"/>
+
+  <LinearLayout
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:layout_margin="10dp"
+      android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:id="@+id/secondEditProfileUserName"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/secondEditProfileUserSex"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:text="@string/user_nick_name"
+          android:id="@+id/secondEditProfileUserNickNameText" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:id="@+id/secondEditProfileUserNickName" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:text="@string/user_school"
+          android:id="@+id/secondEditProfileUserSchoolText" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:id="@+id/secondEditProfileUserSchool" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:text="@string/user_mobile"
+          android:id="@+id/secondEditProfileUserMobileText" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:id="@+id/secondEditProfileUserMobile" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_alignParentStart="true"
+          android:text="@string/user_email"
+          android:id="@+id/secondEditProfileUserEmailText" />
+
+      <EditText
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_alignParentEnd="true"
+          android:id="@+id/secondEditProfileUserEmail" />
+    </RelativeLayout>
+  </LinearLayout>
+
+</LinearLayout>
