@@ -1,0 +1,14 @@
+## project 
+
+[cyd](https://github.com/luke021//cyd)
+
+## components
+I perfer angular-strap to Bootstrap JS. That provides me with single Angular experience with Bootstrap CSS. 
+
+### navigation bar
+
+[angular-strap navbar](http://mgcrea.github.io/angular-strap/#/#navbars)
+
+* modal (show from top when users click on **sign up** or **log in**)     
+	[angular-strap modal](http://mgcrea.github.io/angular-strap/#/#modals). This solution is not satisfactory as the modal is the child of the navigation bar and they will have the same `z-index`. That's not good as they will either be both masked by backdrop or be both in front of backdrop. 
+

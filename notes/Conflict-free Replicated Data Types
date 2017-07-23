@@ -1,0 +1,25 @@
+
+## Portfolio of basic CRDTs
+
+### Register
+* Last-write-win Register
+* Multi-value Register
+
+### Counter
+* Op-based Counter
+* State-based Counter
+	1. G-Counter 
+    2. PN-Counter
+    3. Non-negative Counter
+    
+### Set
+* G-Set
+* 2P-Set / U-Set 
+* LWW-element Set
+* PN-Set
+* Observed-Remove Set
+
+### Graph
+
+## References
+1. [a comprehensive study of convergent and commutative data types](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=https%3A%2F%2Fhal.archives-ouvertes.fr%2Ffile%2Findex%2Fdocid%2F555588%2Ffilename%2Ftechreport.pdf&ei=vxpaVPGKLOr9iAKMz4GwDw&usg=AFQjCNFTWeQEGW2TYRVKkHiDdQTvy6fjjA&sig2=Z4p3penxucuvVLlq-i6z7w&bvm=bv.78972154,d.cGE)
