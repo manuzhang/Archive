@@ -1,0 +1,109 @@
+## Keynote
+
+*  [Scala - where it came from, where it's going](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Odersky_Scala_Where_It_Came_From_Where_It_Is_Going.pdf?_ga=1.56269090.825143465.1429064340) by Martin Odersky ([@odersky](https://twitter.com/odersky))
+*  **Why Open Source Matters by Danese Cooper** ([@DivaDanese](http://twitter.com/@DivaDanese)) 
+*  [Technical Leadership from wherever you are](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/Keynote_Marsh.pdf) by Diane Marsh ([@dmarsh](http://twitter.com/@dmarsh))
+   
+## Internals and Essentials
+
+*   [Essential Scala: Six Core Principles for Learning Scala by](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/essential-scala.pdf) Noel Welsh ([@noelwelsh](http://twitter.com/@noelwelsh))
+*   [Under the Hood of Scala Implicits](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/Under%20the%20Hood%20of%20Scala%20Implicits%20(ScalaDays%202015)%20(1)%20(1).pdf) by Alexander Podkhalyuzin
+
+## Industry and Applications
+*   [Shattering Hadoop's Large-Scale Sort Record with Spark and Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Xin_Performance_Optimization.pdf) by Reynold Xin ([@rxin](http://twitter.com/@rxin))
+*   [Apache Spark: A Large Community Project in Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Wendell_Spark.pdf) by Patrick Wendell ([@pwendell](http://twitter.com/@pwendell))
+*   [Akka in Production: Why and How](http://www.slideshare.net/EvanChan2/akka-in-production-scaladays-2015) by Evan Chan ([@Evanfchan](http://twitter.com/@Evanfchan))
+*   [Akka HTTP: the Reactive Web Toolkit](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Kuhn_Akka_Streams.pdf) by Roland Kuhn ([@rolandkuhn](http://twitter.com/@rolandkuhn))
+*   [Reactive Reference Architecture](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_reactive_reference_architecture.pdf) by Markus Jura ([@MarkusJura](https://twitter.com/MarkusJura)) and Nilanjan Raychaudhuri ([@nraychaudhuri](https://twitter.com/nraychaudhuri))
+*   [Anatomy of a Modern Play Application](https://speakerdeck.com/marconilanna/anatomy-of-a-modern-play-application) by Marconi Lanna ([@ScalaFacts](http://twitter.com/@ScalaFacts))
+*   [Exercise in machine learning    ](http://www.eigengo.com/scaladays-sf-2015) by Jan Machacek ([@honzam399](http://twitter.com/@honzam399))
+*   [The Unreasonable Effectiveness of Scala for Big Data](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Wampler_Unreasonable_Effectiveness_Of_Scala_For_Big_Data.pdf) by Dean Wampler ([@deanwampler](http://twitter.com/@deanwampler))
+*   [Scala - The Real Spark of Data Science](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Gordon_Scala_The_Real_Spark_of_DData_Science.pdf) by Vitaly Gordon ([@BigDataSc](http://twitter.com/@BigDataSc))
+
+## Collections
+
+*   [Scala Collections Performance](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Motlin_Scala_Collections_Performance.pdf) by Craig Motlin ([@motlin)](http://twitter.com/@motlin)
+*   [S3 at Scale: Async Scala Client with Play Iteratees and Composable Operations](http://www.slideshare.net/GregSilin/stream-collections-scala-days) by Greg Silin ([@gregsbriefs](http://twitter.com/@gregsbriefs))
+
+## History and Future
+
+*   [How is Scala Made](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_Kossakowski_How_Scala_is_made.pdf) by Grzegorz Kossakowski ([@gkossakowski](http://twitter.com/@gkossakowski))
+*   [Why Scala.js](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_Haoyi_Why_Scala.js.pdf) by Li Haoyi ([@li_haoyi](http://twitter.com/@li_haoyi))
+*   [The JVM Backend and Optimizer in Scala 2.12](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_Rytz_Backend_Optimizer.pdf) by Lukas Rytz ([@lrytz](http://twitter.com/@lrytz))
+
+## Type and Safety
+
+*   [Delimited dependently-typed monadic checked exceptions in Scala](http://rapture.io/talks/exceptions/sanfrancisco.html) by Jon Pretty ([@propensive](http://twitter.com/@propensive))
+*   [Type-level Programming in Scala 101](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Barnes_Typelevel_Prog.pdf) by Joe Barnes ([@joescii](http://twitter.com/@joescii))
+*   [Improving Correctness With Types](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Hull_CorrectnessSimplified.pdf) by Iain Hull ([@IainHull](http://twitter.com/@IainHull))
+
+## Tools
+*   [Scala IDE from 0 to 4.0](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Dragos_ScalaIDE0.pdf) by Iulian Dragos ([@jaguarul](http://twitter.com/@jaguarul))
+*   [The road to sbt 1.0 is paved with server](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_Suereth_Yokota_sbt.pdf) by Josh Suereth ([@jsuereth](http://twitter.com/@jsuereth)) and Eugene Yokota ([@eed3si9n](http://twitter.com/@eed3si9n))
+*   [Toward a Safer Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/Toward%20a%20Safer%20Scala%20@%20Scala%20Days%20SF%202015.pdf) by Leif Wickland ([@leifwickland](http://twitter.com/@leifwickland))
+
+
+## Libraries
+*   [A Skeptic's Look at scalaz' "Gateway Drugs"](http://slides.com/bwmcadams/scalaz-gateway-drugs#/) by Brendan McAdams ([@rit](http://twitter.com/@rit))
+*   [The swiss army knife of generic programming: shapeless's TypeClass type class in action](https://docs.google.com/a/typesafe.com/file/d/0B9fGApX0ZqFRcDBkYkg1STVxZEE/edit) (plus a [demo](https://github.com/milessabin/demo-scaladayssf-2015)) by Miles Sabin ([@milessabin](http://twitter.com/@milessabin))
+*   [Type-safe off-heap memory for Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Shabalin_Type-safe_Off-heap_Memory.pdf) by Denys Shabalin ([@den_sh](http://twitter.com/@den_sh))
+*   [Reasonable RPC with Remotely](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Runar_Tim_RPC.pdf) by Timothy Perrett ([@timperrett](http://twitter.com/@timperrett)) and Rúnar Bjarnason ([@runarorama](http://twitter.com/@runarorama))
+
+## Mysteries
+
+*   [banana-rdf: Interacting with the Web of Data in Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/BananaRdfSLIDES.pdf) by Alexandre Bertails ([@bertails](http://twitter.com/@bertails))
+*   
+
+
+## Others
+
+*   [Visualize the things](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Mighdoll_Visualize_the_Things.pdf) by Lee Mighdoll ([@mighdoll](http://twitter.com/@mighdoll))
+*   **Life Beyond the Illusion of Present** by Jonas Bonér ([@jboner](http://twitter.com/@jboner))
+*   [Quantifind's story: Building custom interactive data analytics infrastructure](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_LeCompte_Quantifind%27s_Story.pdf) by Ryan LeCompte ([@ryanlecompte](http://twitter.com/@ryanlecompte))
+*   [Scala applications on the cloud](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Srinivas_ScalaPlay.pdf) by Raghavan N. Srinivas ([@ragss](http://twitter.com/@ragss))
+
+
+*   [State of the Meta](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T2_Burmako_StateOfTheMetaSpring.pdf) by Eugene Burmako ([@xeno_by](http://twitter.com/@xeno_by))
+
+*   [Leveraging Scala Macros for Better Validation](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Gabel_Leveraging_Scala_Macros.pdf) by Tomer Gabel ([@tomerg](http://twitter.com/@tomerg))
+*   [Being Lazy with Scala](http://agiledeveloper.com/presentations/being_lazy_with_scala.zip) by Venkat Subramaniam ([@venkat_s](http://twitter.com/@venkat_s))
+
+*   **Whirlwind tour of the Scala Ecosystem** by Josh Suereth ([@jsuereth](http://twitter.com/@jsuereth))
+
+*   **Happy Paths: Functional Constructs in the Wild** by James Kionka and Joe Walp
+
+
+
+
+
+
+*   [Function-Passing Style, A New Model for Asynchronous and Distributed Programming](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Miller_Function-Passing.pdf) by Heather Miller ([@heathercmiller](http://twitter.com/@heathercmiller))
+*   [The Scalactic Way](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Venners_TheScalacticWay.pdf) by Bill Venners ([@bvenners](http://twitter.com/@bvenners))
+
+*   [Easy Scalability with Akka](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Nash_Easy_scalability.pdf) by Michael Nash ([@MichaelP](http://twitter.com/@MichaelPNash))
+*   [Scala Records: Extensible records and type-indexed maps](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Vogt_Compossible.pdf) by Jan Christopher Vogt ([@cvogt](http://twitter.com/@cvogt))
+
+
+*   [Scala: Power and Versatility](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T1_Laddad_Scala_Power_Versatility.pdf) by Shadaj Laddad ([@ShadajL](http://twitter.com/@ShadajL))
+
+*   [Some Things Never Change: Immutable Data in the Real World](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Gilmore-Innis_immutabledata.pdf) by Kelsey Gilmore-Innis ([@kelseyinnis)](http://twitter.com/@kelseyinnis)
+
+
+
+
+*   [Grok: an optimistic mini-library for efficient and safe parsing](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/scaladays2015-kerr_rex-Grok.pdf) by Rex Kerr ([@_ichoran_](http://twitter.com/@_ichoran_))
+
+*   [Scalable task distribution with Scala, Akka and Mesos](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Rexin_Mesos.pdf) by Dario Rexin ([@evonox](http://twitter.com/@evonox))
+*   [Project Valhalla: The good, the Bad and the Ugly](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Urech_Project_Valhalla.pdf) by Vlad Ureche ([@VladUreche](http://twitter.com/@VladUreche))
+
+
+*   [If I Only Had a Brain...In Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_Pitt_If_Only.pdf) by Julie Pitt ([@yakticus](http://twitter.com/@yakticus))
+*   [Functional Natural Language Processing with Scala](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/2015-scaladays-epic.pdf) (plus [another presentation](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/CasesHall-Potts-Slides-SD15.pdf)) by David Hall ([@dlwh](http://twitter.com/@dlwh)) and Ignacio Cases ([@ignaciocases](http://twitter.com/@ignaciocases))
+*   [Scala needs YOU!](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/Scala%20needs%20YOU!.pdf) by Dick Wall ([@dickwall](http://twitter.com/@dickwall))
+
+*   [Legacy modernization from monolithic PHP to reactive SOA](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T3_White_Hootsuite.pdf) by Mike White ([@hootsuitemike](http://twitter.com/@hootsuitemike))
+
+*   [A Guided Tour of a Distributed Application](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/AGuidedTourSLIDES.pdf) by Christopher Hunt [@huntchr](http://twitter.com/@huntchr)
+
+*   [Reactive Slick for Database Programming](http://downloads.typesafe.com.s3.amazonaws.com/website/presentations/ScalaDaysSF2015/T3_Zeiger_Reactive_Slick.pdf) by Stefan Zeiger ([@StefanZeiger](http://twitter.com/@StefanZeiger))
+*   [Scala Puzzlers: In the Matrix, anything is possible!](http://downloads.typesafe.com/website/presentations/ScalaDaysSF2015/T4_Phillips_Scala_Puzzlers.pdf) by Andrew Phillips
