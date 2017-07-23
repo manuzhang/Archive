@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hourglass</string>
+
+   <string name="txt_refresh">Refresh</string>
+    <string name="txt_checkin">Check-In</string>
+    <string name="txt_map">Map</string>
+</resources>

@@ -1,0 +1,33 @@
+# Andriod #
+*.apk
+*.ap_
+*.dex
+bin/
+gen/
+local.properties
+
+# java #
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse #
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+.externalToolBuilders/
+*.launch
+.cproject
+.buildpath

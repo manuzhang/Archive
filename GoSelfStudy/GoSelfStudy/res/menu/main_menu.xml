@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_refresh"
+        android:title="@string/txt_refresh"
+        android:icon="@drawable/ic_action_refresh" 
+        android:orderInCategory="0"
+        android:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/main_checkin"
+        android:title="@string/txt_checkin"
+        android:icon="@drawable/ic_action_checkin"
+        android:orderInCategory="1"
+        android:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/main_map"
+        android:title="@string/txt_map"
+        android:icon="@drawable/ic_action_map"
+        android:orderInCategory="2"
+        android:showAsAction="ifRoom|withText" />
+</menu>
+
