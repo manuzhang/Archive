@@ -1,0 +1,29 @@
+<div ng-controller="UserProfileCtrl">
+    <md-content layout-padding>
+        <md-input-container layout="row">
+            <img id="portrait" src="{{userProfile.portraitUrl}}"
+                 class="img-rounded">
+            <md-button class="md-raised md-primary" id="user_picture_file"
+                    plupload="userPictureUpload.url"
+                    plupload-options="userPictureUpload.options"
+                    plupload-callbacks="userPictureUpload.callbacks">上传照片
+            </md-button>
+        </md-input-container>
+        <md-input-container layout="row">
+            <label>姓名</label>
+            <input ng-model="userProfile.name" type="text">
+        </md-input-container>
+        <md-input-container layout="row">
+            <label>昵称</label>
+            <input ng-model="userProfile.nickName" type="text">
+        </md-input-container>
+        <md-input-container layout="row">
+            <label>手机</label>
+            <input ng-model="userProfile.mobile" type="text" placeholder="Phone Number">
+        </md-input-container>
+        <div layout layout-align="end center">
+            <md-button class="md-raised md-primary" ng-click="saveProfile()"
+                       ng-disabled="saving">保存</md-button>
+        </div>
+    </md-content>
+</div>

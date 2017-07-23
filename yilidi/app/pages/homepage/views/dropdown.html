@@ -1,0 +1,21 @@
+<div class="flyout-navigation dropdown" ng-mouseleave="mouseleaveMenu();">
+    <ul class="flyout-dropdown list-unstyled" role="menu" ng-show="visible" >
+        <li class="flyout-list-item"
+            ng-repeat="category in categories">
+            <a ng-href="#/{{ category.categoryName }}"
+               ng-mouseenter="mouseenterRow($index)"
+               ng-click="clickRow($index);" >
+                {{ category.categoryName }}
+            </a>
+            <div class="popover" ng-class="{'reveal': activeRow === $index}">
+                <div class="popover-content">
+                    <ul class="list-unstyled" >
+                        <li ng-repeat="child in category.children">
+                            <a ng-href="#/{{ child.categoryName }}"> {{ child.categoryName }} </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

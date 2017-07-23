@@ -1,0 +1,25 @@
+#category {
+    fill: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.modal {
+    z-index: 3000;
+}
+
+.modal-backdrop {
+    z-index: 1050;
+}
+
+#userPortrait {
+    width: 24px;
+    height: 24px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}

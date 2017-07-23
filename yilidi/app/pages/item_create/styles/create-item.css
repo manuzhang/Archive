@@ -1,0 +1,156 @@
+md-progress-linear .md-container {
+    top: 0px;
+}
+
+.float-right {
+    float: right;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+#carousel {
+    margin-top: 20px;
+}
+
+.starter-template {
+    padding: 40px 15px 10px 15px;
+    text-align: center;
+}
+
+.carousel-container{
+    width: 70%;
+    margin: auto;
+    padding: auto;
+}
+
+.slide-container {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    outline: 0;
+}
+
+.slide-header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#slide-step1 {
+    padding: 15px;
+}
+
+#slide-step1 a {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#slide-step2 {
+}
+
+#slide-step2 h2 {
+/*    text-align: left;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+#slide-step2 .input-group {
+    width: 120px;
+}
+
+#slide-step3 img {
+    width: 150px;
+    height: 100px;
+}
+
+#slide-step3 md-progress-linear {
+    width: 150px;
+}
+
+#slide-step4 img {
+    width: 300px;
+    height: 150px;
+}
+
+#slide-step4 li {
+    list-style: none;
+}
+
+.slide-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.progress {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 0;
+}
+
+.input-item-name {
+    position: relative;
+    height: 60px;
+    font-size: 150%;
+}
+
+.button-item-next {
+    position: relative;
+    height: 60px;
+    width: 70px;
+}
+
+.input-item-name-group {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    width:70%;
+}
+
+.item-modal {
+    margin: 300px 0px 0px 0px;
+}
+
+.item-title {
+    text-align: center;
+}
+
+.fileupload-progress {
+    margin: 10px 0;
+}
+.fileupload-progress .progress-extended {
+    margin-top: 5px;
+}
+.error {
+    color: red;
+}
+
+
+
+@media (min-width: 481px) {
+    .navigation {
+        list-style: none;
+        padding: 0;
+    }
+    .navigation li {
+        display: inline-block;
+    }
+    .navigation li:not(:first-child):before {
+        content: "| ";
+    }
+}
+
+.no-bullet-radio {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+
+.pointer-cursor {
+    cursor: pointer;
+}

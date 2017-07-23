@@ -1,0 +1,44 @@
+<!--Item Info section ----------------------------------------------------------------->
+<div id="item-info" ng-controller="ItemInfoCtrl"  class = "col-md-8 row">
+    <div layout="column" layout-margin layout-padding>
+        <div layout="row" id="itemName">
+            <div >{{item.name}}</div>
+            <div >[ {{item.used ? '旧' : '新'}} ]</div>
+        </div>
+        <blockquote id="itemDescription">{{item.description}}</blockquote>
+        <div layout="column" layout-margin layout-padding id="itemTimeCount">
+            <div>距离拍卖结束还有：</div>
+            <div id="clock" flip-clock
+                 flip-clock-options="flipClock.options"
+                 flip-clock-time="flipClock.time"
+                 ng-if="item"></div>
+            <div>当前价格：</div>
+            <div flip-price
+                 flip-price-options="flipPrice.options"
+                 flip-price-value="flipPrice.value"
+                 ng-if="item"></div>
+        </div>
+<!--        <div layout="row" layout-padding>
+            <div layout="row" layout-align="center center">{{item.minPrice}}</div>
+            <md-slider flex min="{{item.minPrice}}" max="{{item.maxPrice}}" ng-model="item.bidPrice"
+                       aria-label="bid" id="bid-slider">
+            </md-slider>
+            <div layout="row" layout-align="center center">{{item.maxPrice}}</div>
+            <div flex="20" layout layout-align="center center">
+                <input type="number" ng-model="item.bidPrice" aria-label="bid" aria-controls="bid-slider" />
+            </div>
+        </div>-->
+        <div layout="row">
+            <span layout-padding>
+                <md-button class="md-warn md-raised"
+                           ng-click="onFavorite(item.itemId, $root.currentUser.userId)">收藏</md-button>
+            </span>
+            <span layout-padding>
+                <md-button class="md-primary md-raised"
+                           ng-click="onBid(item, $root.currentUser.userId, bidPrice)">
+                    竞价
+                </md-button>
+            </span>
+        </div>
+    </div>
+</div>

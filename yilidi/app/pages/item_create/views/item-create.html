@@ -1,0 +1,26 @@
+<md-progress-linear class="md-accent" md-mode="determinate" value="{{ getProgress() }}"></md-progress-linear>
+<ul rn-carousel rn-carousel-index="step" id="carousel">
+    <li ng-repeat="slide in slides">
+        <md-content class="carousel-container md-whiteframe-z2">
+            <md-toolbar>
+                <div class="md-toolbar-tools" layout="row">
+                    <span>{{ slide.title }}</span>
+                    <div layout-align="end center" ng-include="slide.button"></div>
+                </div>
+            </md-toolbar>
+            <md-card class="no-margin">
+                <md-card-content >
+                    <div ng-include="slide.url"></div>
+<!--                    <div layout="row" layout-align="end center">
+                        <md-button class="md-raised" ng-click="lastStep()" ng-show="step > 0">上一步</md-button>
+                        <md-button class="md-raised md-primary" ng-click="nextStep()" ng-show="step < slides.length -1">下一步</md-button>
+                        <md-button class="md-raised md-primary" ng-click="submit()" ng-show="step == slides.length - 1">提交</md-button>
+                    </div>-->
+                </md-card-content>
+            </md-card>
+        </md-content>
+    </li>
+</ul>
+
+
+

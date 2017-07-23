@@ -1,0 +1,26 @@
+<md-card class="no-margin">
+    <md-card-content>
+        <form name="itemInfoForm" novalidate>
+            <md-input-container>
+                <label>物品名称</label>
+                <input ng-model="item.name" ng-required="true">
+            </md-input-container>
+            <p>我的商品是: <span class="radioValue">{{ item.used == 0 ? "新品" : "二手"}}</span> </p>
+            <md-radio-group layout="row" ng-model="item.used">
+                <md-radio-button ng-repeat="con in condition" ng-value="con.value">{{ con.name}}</md-radio-button>
+            </md-radio-group>
+            <md-input-container>
+                <label>用一句话描述你的商品吧</label>
+                <input ng-model="item.description" ng-required="true" />
+            </md-input-container>
+            <p>我要设定商品的价格：</p>
+            <md-input-container flex>
+                <label>价格(&#165;)</label>
+                <input ng-model="item.maxPrice" ng-required="true" />
+            </md-input-container>
+            <md-button class="md-raised md-primary" id="pickfiles" plupload="fileUpload.url" plupload-options="fileUpload.options" plupload-callbacks="fileUpload.callbacks">添加图片
+            </md-button>
+            <md-button class="md-raised md-primary" ng-click="submit()">提交</md-button>
+        </form>
+    </md-card-content>
+</md-card>

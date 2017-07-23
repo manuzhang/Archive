@@ -1,0 +1,110 @@
+#profile-container {
+    width: 70%;
+    margin: 20px auto;
+    padding: auto;
+}
+
+#profile-container md-tabs {
+    background-color: white;
+}
+
+#portrait {
+    width: 200px;
+    height: 100px;
+}
+
+/*Seller profile*/
+#user-profile {
+    float: left;
+    margin-top:20px;
+    margin-bottom:20px;
+    width: 100%;
+    height: 100%;
+
+}
+#user-profile-left {
+    height: inherit;
+}
+#sellerRate {
+    width: -webkit-max-content;
+    margin-left : -25px;
+    margin-right : auto;
+}
+#profileUpper{
+    height:150px;
+}
+#profileLower{
+    height:50px;
+}
+#profileBtn {
+    width: -webkit-max-content;
+    margin:auto;
+}
+#profileBuyBtn{
+    width:310px;
+    height: 50px;
+}
+.sellerRateBtn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #d3d3d3;
+    font-size: 2.5em;
+    padding: 0px 25px 0px 25px;
+}
+#sellerPic {
+    height : 160px;
+}
+#sellerStarGroup {
+    height: 40px;
+}
+.sellerStars{
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #d3d3d3;
+    font-size: 2em;
+    margin-bottom:0px;
+/*    padding: 5px 0px 0px 0px;*/
+}
+
+/*Item Comments*/
+
+#item-comments {
+    margin-top: 50px;
+}
+.ng-invalid.ng-dirty {
+    border-color: red;
+}
+
+.ng-valid.ng-dirty {
+    border-color: green;
+}
+
+.lineDivider hr{
+    border-color:#d3d3d3;
+    margin:10px 5px 15px 5px;
+}
+
+
+#item-comments {
+    position:relative;
+
+}
+
+#commentTop{
+    margin-top: 15px;
+
+}
+
+.commentActBtn {
+    background: none;
+    border: none;
+    box-shadow: none;
+    color: #d3d3d3;
+}
+
+#commentDateText {
+    color:#d3d3d3;
+}
+

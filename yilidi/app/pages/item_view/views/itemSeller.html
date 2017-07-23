@@ -1,0 +1,45 @@
+<!--Seller Profile section----------------------------------------------------------------->
+<div id="user-profile" ng-controller="ItemSellerCtrl"  class = "col-md-12">
+    <div class="col-md-6" id="user-profile-left" >
+<!--        <div ng-if ="itemSeller.sharedItem().itemSellerId != null && !userProfileAdded" >
+            {{itemSeller.displayUserProfile(itemSeller.sharedItem().itemSellerId)}}
+        </div>-->
+        <div class = "col-md-6" >
+            <div class = "col-md-12" id="sellerPic">
+                <img ng-src="{{userProfile.portraitUrl}}" width="150" height="150" class = "img-circle">
+            </div>
+            <div class="col-md-12" id="sellerStarGroup">
+                <!--                    <span class="glyphicon glyphicon-star sellerStars" aria-hidden="true"></span> -->
+                <!-- TODO: We may not need the stars-->
+                <span class="glyphicon glyphicon-star-empty sellerStars" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty sellerStars" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty sellerStars" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty sellerStars" aria-hidden="true"></span>
+                <span class="glyphicon glyphicon-star-empty sellerStars" aria-hidden="true"></span>
+                <div>
+                    <span class="sellerStars">Likes: {{userProfile.userLikeCount}}</span>
+                </div>
+            </div>
+        </div>
+        <div class = "col-md-6" >
+            <div class="col-md-12" id="profileUpper">
+                <div>卖家: {{userProfile.name}}</div>
+                <div>联系方式: {{userProfile.email}}</div>
+            </div>
+            <div class="btn-group  col-md-12" role="group" aria-label="..." id="profileLower">
+                <div  id="sellerRate">
+                    <button type="button" class="btn btn-default sellerRateBtn">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default sellerRateBtn">
+                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default sellerRateBtn">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

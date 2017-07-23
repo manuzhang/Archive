@@ -1,0 +1,66 @@
+<div ng-controller="NavCtrl">
+    <md-toolbar layout="row">
+        <div layout="row" layout-align="start center">
+            <md-button ng-disabled="noCategories" ng-click="toggleCategoryNav()">
+                <ng-md-icon id="category" icon="menu"></ng-md-icon>
+            </md-button>
+            <span><md-button ng-click="goHome()">一哩地</md-button></span>
+        </div>
+        <div layout="row" flex layout-align="end center" ng-controller="AuthCtrl">
+            <span layout-padding ng-show="loggedIn()">
+                <img id="userPortrait" src="{{ $root.currentUser.portraitUrl }}"/>
+            </span>
+                    <span layout-padding ng-show="loggedIn()">
+                        <a href="#/user/profile"><md-button>{{ $root.currentUser.nickName }}</md-button></a>
+                    </span>
+                    <span layout-padding ng-show="loggedIn()">
+                        <md-button class="md-raised md-primary" ng-click="logout()">注销</md-button>
+                    </span>
+                    <span layout-padding ng-hide="loggedIn()">
+                        <md-button class="md-raised md-primary" ng-href="#/signup">注册</md-button>
+                    </span>
+                    <span layout-padding ng-hide="loggedIn()">
+                        <md-button class="md-raised md-primary" ng-href="#/login">登录</md-button>
+                    </span>
+                    <span layout-padding ng-hide="loggedIn()">
+                        <md-button class="md-raised md-primary">帮助</md-button>
+                    </span>
+                    <span layout-padding>
+                        <md-button class="md-raised md-primary" ng-click="goCreateItem()">我要出售</md-button>
+                    </span>
+        </div>
+    </md-toolbar>
+    <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="category-nav">
+        <md-toolbar class="md-theme-light">
+            <h1 class="md-toolbar-tools">选择分类</h1>
+        </md-toolbar>
+        <div layout="column">
+            <div ng-repeat="category in categories">
+                <md-button class="md-default-theme"
+                           ng-init="open = false"
+                           ng-click="open = !open"
+                           layout-fill >
+                    <div layout="row" layout-margin>
+                        {{ category.categoryName}}
+                        <span flex></span>
+                        <ng-md-icon icon="expand_more" ng-show="showExpandMoreButton(category, open)"></ng-md-icon>
+                        <ng-md-icon icon="expand_less" ng-show="showExpandLessButton(category, open)"></ng-md-icon>
+                    </div>
+                </md-button>
+                <div layout="column" layout-margin>
+                    <md-button class="md-default-theme"
+                               ng-href="{{ getCategoryUrl(child) }}"
+                               ng-repeat="child in category.children" ng-show="open">
+                        <div layout="row" layout-margin>
+                            {{child.categoryName}}
+                            <span flex></span>
+                        </div>
+                    </md-button>
+                </div>
+            </div>
+
+            <md-divider></md-divider>
+        </div>
+    </md-sidenav>
+</div>
+

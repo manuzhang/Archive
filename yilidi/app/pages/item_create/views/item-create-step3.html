@@ -1,0 +1,18 @@
+<div id="slide-step3">
+    <div>
+        <md-list layout="row">
+            <md-item ng-repeat="img in images">
+                <md-content layout-padding>
+                    <img ng-src="{{ img.url }}" />
+                    <md-progress-linear class="md-primary" md-mode="determinate" value="{{ progress }}" >
+                    </md-progress-linear>
+                </md-content>
+            </md-item>
+        </md-list>
+        <div layout="row" class="float-right">
+            <md-button class="md-raised" ng-click="lastStep()">上一步</md-button>
+            <md-button class="md-raised md-primary" ng-click="submit()">提交</md-button>
+        </div>
+    </div>
+</div>
+

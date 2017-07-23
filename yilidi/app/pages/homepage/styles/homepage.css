@@ -1,0 +1,88 @@
+html {
+    background-color: #ececec;
+}
+
+body {
+    background-color: inherit;
+}
+
+.waterfall {
+    margin-top: 100px;
+    margin-left: 80px;
+}
+
+.item {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 236px;
+    float: left;
+    background-color: #ffffff;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -moz-box-shadow:  2px 2px 2px #aeaeae;
+    box-shadow: 2px 2px 2px #aeaeae;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.item-image-wrapper {
+    width: 100%;
+    border-radius:10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+.item-image-wrapper img{
+    width: 236px;
+}
+
+.item-block {
+    width: 100%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.item-name {
+    margin-left: 0.7em;
+    font: 13px Tahoma,Helvetica,Arial,'宋体',sans-serif;
+    color: #000000;
+}
+
+.item-desc {
+    margin-left: 0.8em;
+    margin-top: 5px;
+    font: 11px Tahoma,Helvetica,Arial,'宋体',sans-serif;
+    color: #000000;
+}
+
+.item-mark {
+    margin-left: 0.7em;
+    margin-top: 10px;
+}
+
+.item-seller-participant {
+    margin-left: 0.7em;
+    width:2.2em;
+    height:2.2em;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius:59px;
+    float: left;
+}
+
+.item-seller-detail{
+    width: 100%;
+    margin-right: -3.5em;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    float: right;
+}
+
+.item-block-line {
+    width:100%;
+    height:1px;
+    background:#E0E0E0;
+}
+
+

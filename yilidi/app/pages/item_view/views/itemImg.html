@@ -1,0 +1,7 @@
+<div id="item-img"  ng-controller="ItemImgCtrl"> 
+    <flex-slider slide="s in slides track by s.id" animation="slide" control-nav="thumbnails"> 
+        <li data-thumb="{{s.url}}"> 
+            <img ng-src="{{s.url}}"> 
+        </li> 
+    </flex-slider>  
+</div>

@@ -1,0 +1,37 @@
+<div masonry class="waterfall">
+    <!--    <div class="masonry-brick item" ng-repeat="item in items">-->
+    <div class="item" ng-repeat="item in items">
+        <div layout="column">
+            <a href="#/item/view/{{ item.id }}" target="_blank">
+                <div class="item-image-wrapper" ng-mouseenter="show = true"
+                     ng-mouseleave="show = false">
+                    <img ng-src="{{ item.pictures[0] }}"/>
+                </div>
+            </a>
+            <div class="item-block-line"></div>
+            <div class="item-block">
+                <div class="item-name">{{ item.name }}</div>
+                <div class="item-desc">{{ item.description }}</div>
+                <div class="item-mark" layout="row">
+                    <div ng-show="item.favoriteCount > 0">
+                        <ng-md-icon icon="favorite" ></ng-md-icon>{{ item.favoriteCount }}
+                    </div>
+                    <div ng-show="item.bidCount > 0">
+                        <ng-md-icon icon="add_shopping_cart"></ng-md-icon>{{ item.bidCount }}
+                    </div>
+                </div>
+            </div>
+            <div class="item-block-line"></div>
+            <div class="item-block">
+                <img class="item-seller-participant" ng-src="{{ item.seller.portraitUrl }}"/>
+                <div class="item-seller-detail">
+                    <div class="item-name">{{ item.seller.nickName }}</div>
+                    <div ng-show="item.seller.likeCount > 0">
+                        <ng-md-icon icon="thumb_up"></ng-md-icon> {{ item.seller.likeCount }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

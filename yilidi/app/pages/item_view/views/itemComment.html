@@ -1,0 +1,55 @@
+<!--Item Comments Section----------------------------------------------------------------->
+<div id="item-comments" ng-controller="ItemCommentCtrl" class = "col-md-12">
+    <!--Display-->
+    <div id="commentTop"></div>
+    <div layout="column" ng-repeat="comm in comments" class = "ng-scope row">
+        <div >
+            <div >
+                <img ng-src="{{comm.commentCreateUserPortraitUrl}}"  width="90" height="90" class = "img-rounded">
+            </div>
+            <div >
+                <div >{{comm.commentCreateUserNickName}}</div>
+                <div >{{comm.commentContent}}</div>
+            </div>
+        </div>
+        <div >
+            <div class="btn-group  col-md-5 col-md-offset-1" role="group" aria-label="...">
+                <div>
+                    <button type="button" class="btn btn-default commentActBtn">回复</button>
+                    <span class="commentActBtn">|</span>
+                    <button type="button" class="btn btn-default commentActBtn">
+                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                    </button>
+                    <span class="commentActBtn">|</span>
+                    <button type="button" class="btn btn-default commentActBtn">举报
+                        <span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <div  id="commentDateText">{{comm.commentCreateDate | date : 'short'}}</div>
+        </div>
+        <md-divider></md-divider>
+    </div>
+    <!--Form-->
+    <form name="commentForm"  class="col-mid=12" ng-disabled="!commentForm.$valid"
+          ng-submit = "addComment()" novalidate>
+
+        <!--Fill Form-->
+        <div>
+            <h4>留言</h4>
+            <!--Live Preview-->
+            <div class="row">
+                <div >
+                    <p>{{ newComment.commentContent}}</p>
+                </div>
+            </div>
+            <fieldset class="form-group">
+                <textarea ng-model="newComment.commentContent"  class="form-control" rows="4" placeholder="Write a short comment of the product..." title="Comments" required></textarea>
+            </fieldset>
+            <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-right" value="Submit Comment" />
+            </fieldset>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,18 @@
+# Vim #
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+/.project
+
+# Web
+node
+node_modules
+bower_components
+.tmp
+.merge_file*
+.sass-cache
+.DS_Store
+dist

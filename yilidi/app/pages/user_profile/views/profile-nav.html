@@ -1,0 +1,10 @@
+<div id="profile-container">
+    <md-card>
+        <md-tabs md-dynamic-height md-border-bottom>
+            <md-tab ng-repeat="tab in tabs"
+                    label="{{tab.title}}">
+                <div ng-include="tab.url"></div>
+            </md-tab>
+        </md-tabs>
+    </md-card>
+</div>

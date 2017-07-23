@@ -1,0 +1,17 @@
+<md-card class="auth">
+    <md-card-content>
+        <form name="loginForm" novalidate>
+            <md-input-container>
+                <label>邮箱</label>
+                <input type="email" ng-model="user.email" ng-required="true" />
+            </md-input-container>
+            <md-input-container>
+                <label>密码</label>
+                <input type="password" ng-model="user.password" ng-required="true" />
+            </md-input-container>
+            <div layout="row" layout-align="end center">
+                <md-button  class="md-primary md-raised" ng-click="logIn(user)" ng-disabled="!loginForm.$valid">登录</md-button>
+            </div>
+        </form>
+    </md-card-content>
+</md-card>

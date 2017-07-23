@@ -1,0 +1,18 @@
+<div ng-controller="UserSoldCtrl" class="col-md-sm-7 col-md-7 main">
+    <table ng-table="soldTableParams" class="table">
+        <tr ng-repeat="item in soldItems">
+            <td data-title="'商品名'">
+                {{item.itemName}}
+            </td>
+            <td data-title="'商品描述'">
+                {{item.itemDescription}}
+            </td>
+            <td data-title="'状态'">
+                {{item.itemStatusId}}
+            </td>
+            <td data-title="'关注人数'">
+                {{item.itemParticipantCount}}
+            </td>
+        </tr>
+    </table>
+</div>

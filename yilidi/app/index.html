@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>一哩地</title>
+
+        <link rel="stylesheet" href="bower_components/angular-carousel/dist/angular-carousel.css" />
+        <link rel="stylesheet" href="bower_components/angular-motion/dist/angular-motion.min.css" />
+        <link rel="stylesheet" href="bower_components/flexslider/flexslider.css" />
+        <link rel="stylesheet" href="bower_components/FlipClock/compiled/flipclock.css" />
+        <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css" />
+        <link rel="stylesheet" href="pages/homepage/styles/auth.css" />
+        <link rel="stylesheet" href="pages/item_view/styles/item.css" />
+        <link rel="stylesheet" href="pages/item_view/styles/flipclock.css" />
+        <link rel="stylesheet" href="pages/item_create/styles/create-item.css" />
+        <link rel="stylesheet" href="pages/homepage/styles/homepage.css" />
+        <link rel="stylesheet" href="pages/homepage/styles/nav.css" />
+        <link rel="stylesheet" href="pages/homepage/styles/dropdown.css" />
+        <link rel="stylesheet" href="pages/user_profile/styles/profile.css" />
+    </head>
+    <body ng-app="yilidi">
+        <!-- Add your site or application content here -->
+        <div ng-include="'pages/homepage/views/nav.html'"></div>
+        <div ng-view=""></div>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="bower_components/html5shiv/dist/html5shiv.min.js"></script>
+        <script src="bower_components/respond/dest/respond.min.js"></script>
+        <![endif]-->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/flexslider/jquery.flexslider.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-flexslider/angular-flexslider.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <script src="bower_components/angular-animate/angular-animate.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+        <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+        <script src="bower_components/angular-touch/angular-touch.min.js"></script>
+        <script src="bower_components/angular-carousel/dist/angular-carousel.min.js"></script>
+        <script src="bower_components/lodash/dist/lodash.min.js"></script>
+        <script src="bower_components/restangular/dist/restangular.min.js"></script>
+<!--
+        <script src="bower_components/imagesloaded/imagesloaded.pkgd.min.js"></script>
+-->
+        <script src="bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+        <script src="bower_components/angular-masonry/angular-masonry.js"></script>
+        <script src="bower_components/jQuery-menu-aim/jquery.menu-aim.js"></script>
+        <script src="bower_components/cryptojslib/components/core-min.js"></script>
+        <script src="bower_components/cryptojslib/components/enc-base64-min.js"></script>
+        <script src="bower_components/cryptojslib/rollups/hmac-sha1.js"></script>
+        <script src="bower_components/plupload/js/plupload.full.min.js"></script>
+        <script src="bower_components/angular-plupload/dist/angular-plupload.min.js"></script>
+        <script src="bower_components/ng-table/dist/ng-table.js"></script>
+        <script src="bower_components/angular-aria/angular-aria.js"></script>
+        <script src="bower_components/angular-material/angular-material.min.js"></script>
+        <script src="bower_components/angular-i18n/angular-locale_zh-cn.js"></script>
+        <script src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+        <script src="bower_components/is_js/is.min.js"></script>
+        <script src="bower_components/firebase/firebase.js"></script>
+        <script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+        <script src="app.js"></script>
+        <script src="utils/CodingUtil.js"></script>
+        <script src="utils/ItemUtil.js"></script>
+        <script src="utils/UserUtil.js"></script>
+        <script src="services/CategoryService.js"></script>
+        <script src="pages/item_view/scripts/ItemService.js"></script>
+        <script src="pages/homepage/scripts/UserService.js"></script>
+        <script src="pages/user_profile/scripts/UserProfileService.js"></script>
+        <script src="pages/item_create/scripts/FileUploadService.js"></script>
+        <script src="pages/user_profile/scripts/UserPictureUploadService.js"></script>
+        <script src="pages/item_create/scripts/ItemCreateService.js"></script>
+        <script src="pages/item_view/scripts/flipclock.js"></script>
+        <script src="pages/item_view/scripts/FlipClockDirective.js"></script>
+        <script src="pages/homepage/scripts/AuthController.js"></script>
+        <script src="pages/homepage/scripts/SignUpController.js"></script>
+        <script src="pages/homepage/scripts/LogInController.js"></script>
+        <script src="pages/homepage/scripts/ItemsController.js"></script>
+        <script src="pages/homepage/scripts/NavController.js"></script>
+        <script src="pages/item_create/scripts/ItemCreateController.js"></script>
+        <script src="pages/item_view/scripts/ItemViewController.js"></script>
+        <script src="pages/item_view/scripts/ItemCommentController.js"></script>
+        <script src="pages/item_view/scripts/ItemImgController.js"></script>
+        <script src="pages/item_view/scripts/ItemInfoController.js"></script>
+        <script src="pages/item_view/scripts/ItemSellerController.js"></script>
+        <script src="pages/user_profile/scripts/UserProfileController.js"></script>
+        <script src="pages/user_profile/scripts/ProfileNavigationController.js"></script>
+        <script src="pages/user_profile/scripts/UserBoughtController.js"></script>
+        <script src="pages/user_profile/scripts/UserProfileController.js"></script>
+        <script src="pages/user_profile/scripts/UserSecurityController.js"></script>
+        <script src="pages/user_profile/scripts/UserSoldController.js"></script>
+    </body>
+</html>

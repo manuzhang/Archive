@@ -1,0 +1,42 @@
+<div ng-controller="UserSecurityCtrl">
+        <md-subheader class="md-primary">修改密码</md-subheader>
+        <form layout-padding layout-margin name="passwordForm" novalidate>
+            <div layout="column" layout-sm="column" >
+                <md-input-container>
+                    <label>当前密码</label>
+                    <input type="password" ng-model="currentPassword" ng-required="true">
+                </md-input-container>
+                <md-input-container>
+                    <label>新的密码</label>
+                    <input type="password" ng-model="newPassword" ng-required="true">
+                </md-input-container>
+                <md-input-container>
+                    <label>确认密码</label>
+                    <input type="password" ng-model="confirmPassword" ng-required="true">
+                </md-input-container>
+            </div>
+        </form>
+        <div layout="row" layout-margin layout-padding layout-align="end center">
+            <md-button class="md-raised md-primary"
+                       ng-click="updatePassword()"
+                       ng-disabled="!passwordForm.$valid">保存</md-button>
+        </div>
+        <md-subheader class="md-primary">修改邮箱</md-subheader>
+        <form layout-padding layout-margin name="emailForm" novalidate>
+            <div layout="column" layout-sm="column">
+                <md-input-container>
+                    <label>新的邮箱</label>
+                    <input type="email" ng-model="userEmail" ng-required="true">
+                </md-input-container>
+                <md-input-container>
+                    <label>密码</label>
+                    <input type="password" ng-model="emailPassword" ng-required="true">
+                </md-input-container>
+            </div>
+        </form>
+        <div layout="row" layout-margin layout-padding layout-align="end center">
+            <md-button class="md-raised md-primary"
+                       ng-click="updateEmail()"
+                       ng-disabled="!emailForm.$valid">保存</md-button>
+        </div>
+</div>
